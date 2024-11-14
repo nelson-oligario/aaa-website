@@ -3747,14 +3747,18 @@ ul.blog-post-meta li .icon {
 }
 
 .footer-minimal {
-	padding: 60px 0;
+	/* padding: 60px 0; */
 	text-align: center;
 	background: #343333;
 }
 
+.home{
+	padding-top: 40px;
+}
+
 @media (min-width: 992px) {
 	.footer-minimal {
-		padding: 120px 0;
+		padding-top: 40px;
 	}
 }
 
@@ -4052,7 +4056,7 @@ h3 + p {
 }
 
 * + .row {
-	margin-top: 30px;
+	/* margin-top: 30px; */
 }
 
 .thin-title + * {
@@ -4080,18 +4084,18 @@ h3 + .button {
 }
 
 * + .row {
-	margin-top: 30px;
+	/* margin-top: 30px; */
 }
 
 @media (min-width: 768px) {
 	* + .row {
-		margin-top: 40px;
+		/* margin-top: 40px; */
 	}
 }
 
 @media (min-width: 1200px) {
 	* + .row {
-		margin-top: 60px;
+		/* margin-top: 20px; */
 	}
 }
 
@@ -6931,4 +6935,48 @@ html.rd-navbar-fixed-linked .page {
 
 html:not(.ie-11):not(.ios) .parallax-disabled {
 	background-attachment: fixed;
+}
+
+.content-images{
+	display: flex;
+	margin-top: 30px;
+}
+.first-content-image, .second-content-image{
+	background-color: grey;
+	width: 500px;
+	height: 500px;
+}
+
+.first-content-image{
+	margin-right: 20px;
+}
+
+.content-title{
+	font-size: 55px;
+}
+
+.desc-title{
+	font-weight: 700;
+	margin-right: 5px;
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+.col-lg-10 p{
+	font-size: 20px;
+}
+
+.content-picture{
+	width: fit-content;
+	height: 100%;
+	object-fit: cover;
+}
+
+.zuri-photo{
+	object-position: -220px 0;
+}
+
+.event-description{
+	font-size: 30px !important; 
+
 }

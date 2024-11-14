@@ -7795,6 +7795,7 @@ button.close {
 
 .text-center {
 	text-align: left !important;
+	margin-bottom: 50px;
 }
 
 @media (min-width: 576px) {
