@@ -6921,11 +6921,12 @@ html.rd-navbar-fixed-linked .page {
 	display: none;
 	position: absolute;
 	left: 50%;
-	bottom: 0;
+	bottom: 0px;
 	min-width: 101%;
 	min-height: 101%;
 	max-width: none;
 	transform: translate3d(-50%, 0, 0);
+	object-position: 0 150px;
 }
 
 .parallax-disabled {
@@ -6992,7 +6993,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 20px;
-	row-gap: 20px;
+	row-gap: 60px;
 	box-sizing: border-box;
 }
 
@@ -7023,75 +7024,108 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	padding-top: 20px;
 }
 
+.project-description h4{
+	font-size: 1.5rem;
+}
+
+.project-description p{
+	font-size: 0.9rem;
+}
+
 .project-button{
 	width: 60%;
 }
 
 #card-six-button{
-	margin-top: 100px;
+	margin-top: 35px;
 }
 
 #card-four-image{
 	object-position: 0 -240px;
 }
 
-@media (min-width: 320px){
-	.inner-grid{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-	}
-	.grid-card{
-		box-sizing: border-box;
-		flex: 1;
-	}
-	#card-four-image{
-		object-position: 0 0;
-	}
-	.project-logo{
-		margin-top: 25px;
-	}
+.map-container{
+	width: 100%;
 }
 
-@media (min-width: 768px){
-	.inner-grid{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		row-gap: 50px;
+@media(max-width: 1199px){
+	#card-five-button{
+		margin-top: 60px;
 	}
 	#grid-four-button{
-		margin-top: 54px;
+		margin-top: 85px;
 	}
 
-	#card-four-image{
-		object-position: 0 -200px;
+	.inner-grid{
+		row-gap: 100px;
 	}
-	.project-logo{
-		margin-top: 25px;
-	}
-	#card-six-button{
-		margin-top: 38px;
+	.material-parallax img{
+		object-position: 0 80px;
 	}
 }
 
-@media (min-width: 992px){
+@media(max-width: 991px){
+	.section-lg{
+		padding: 0;
+		
+	}
+
+	.footer-minimal{
+		margin-top: 130px;
+	}
+
+	.image-placeholder{
+		margin-top: 50px;
+	}
 	.inner-grid{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		row-gap: 85px;
+		grid-template-columns: 50% 50%;
 	}
 
 	#card-five-button{
-		margin-top: 45px;
+		margin-top: 30px;
 	}
 
-	#card-six-button{
-		margin-top: 20px;
-	}
-	
 	#grid-four-button{
-		margin-top: 70px;
+		margin-top: 55px;
 	}
-	
+	#card-two-button{
+		margin-top: 55px;
+	}
+
+	.row-50{
+		padding-top: 30px;
+	}
+
+	.material-parallax img{
+		
+		object-position: 0 80px;
+	}
 }
 
+@media(max-width: 767px){
+	.grid-card{
+		height: auto;
+	}
+	#card-four-image{
+		object-position: 0 0px;
+	}
+}
+
+@media(max-width: 504px){
+	.inner-grid{
+		grid-template-columns: 100%;
+		row-gap: 10px;
+	}
+	.grid-card{
+		height: auto;
+	}
+}
+
+@media(max-width: 320px){
+	.grid-card{
+		height: auto;
+	}
+	.project-description{
+		height: auto;
+	}
+}
