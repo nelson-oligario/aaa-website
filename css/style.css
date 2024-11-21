@@ -4034,7 +4034,7 @@ p + .heading-2 {
 }
 
 p + p {
-	margin-top: 15px;
+	margin-top: 1%;
 }
 
 img + p {
@@ -6944,8 +6944,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 .first-content-image, .second-content-image{
 	background-color: grey;
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: auto;
 }
 
 .first-content-image{
@@ -6953,18 +6953,18 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .content-title{
-	font-size: 55px;
+	font-size: 4vw;
 }
 
 .desc-title{
 	font-weight: 700;
 	margin-right: 5px;
-	font-size: 20px;
+	font-size: 1.5vw;
 	margin-top: 40px;
 }
 
 .col-lg-10 p{
-	font-size: 20px;
+	font-size: 1.5vw;
 }
 
 .content-picture{
@@ -6973,17 +6973,21 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	object-fit: cover;
 }
 
-.zuri-photo{
-	object-position: -220px 0;
-}
 
 .event-description{
-	font-size: 30px !important; 
+	font-size: 2vw !important; 
 
 }
 
 .event-button{
 	margin-top: 40px;
+}
+
+@media (max-width:556px){
+	.content-images{
+		flex-direction: column;
+		gap: 1rem;
+	}
 }
 
 .inner-grid{
@@ -7068,7 +7072,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	}
 
 	.footer-minimal{
-		margin-top: 130px;
+		/* margin-top: 130px; */
 	}
 
 	.image-placeholder{
@@ -7264,3 +7268,32 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	overflow: hidden;
 }
 
+.sponsor-container {
+	display: flex;
+	justify-content: center;
+	padding: 3%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+  }
+  
+  .sponsors {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr); /* 4 columns of equal width */
+	gap: 20px; /* space between the logos */
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .logos {
+	width: 50%;
+	height: auto; /* Maintain aspect ratio */
+	max-height: 150px; /* Optional: limit the maximum height of the logos */
+  }
+
+  .sponsor-title{
+	font-size: 2vw;
+	font-weight: 700;
+	margin-bottom: 4%;
+  }
