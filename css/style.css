@@ -7198,7 +7198,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 .form{
 	width: 70%;
-	height: 85vh;
+	height: auto;
 	/* background-color: #00E175; */
 	border-radius: 10px;
 	box-sizing: content-box;
@@ -7223,39 +7223,53 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 .register{
 	display: flex;
 	flex-direction: column;
-	height: 70vh;
-	padding-top: 5%;
-	padding-left: 10%;
-	box-sizing: content-box;
+	height: auto;
+	padding: 5%;
+	justify-content: center;
+	margin-bottom: 30px;
+	
+	
+}
+
+.initial-information{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	
 }
 
 .input{
-	width: 90%;
+	width: 100%;
 	height: 2.2rem;
-	margin-bottom: 2%;
 	border-radius: 5px;
 	border: 1px solid rgb(138, 138, 138);
+	margin-bottom: 0.5rem;
 }
 
 .label{
+	display: block;
 	font-weight: 500;
-	text-align: left;
+	
 }
 
 .register-button{
-	margin-top: 5%;
 	width: 50%;
-	margin-left: 20%;
 	height: 2.5rem;
 	background-color: #7FBC4E;
 	color: white;
 	font-weight: 500;
 	cursor: pointer;
+	margin-top: 2rem;
 }
 
-.register-button:hover{
-	
+.register-button-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 
 .carousel{
 	background-color: rgb(158, 199, 63);
@@ -7268,7 +7282,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	overflow: hidden;
 }
 
-.sponsor-container {
+/* .sponsor-container {
 	display: flex;
 	justify-content: center;
 	padding: 3%;
@@ -7276,18 +7290,21 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-  }
+  } */
   
-  .sponsors {
+  .sponsor-container{
 	display: grid;
 	grid-template-columns: repeat(6, 1fr); /* 4 columns of equal width */
-	gap: 20px; /* space between the logos */
-	justify-content: center;
+	gap: 3rem; /* space between the logos */
+	row-gap: 3rem;
+	justify-items: center;
 	align-items: center;
+	box-sizing: border-box;
+	padding: 0 8%;
   }
   
   .logos {
-	width: 50%;
+	width: 80%;
 	height: auto; /* Maintain aspect ratio */
 	max-height: 150px; /* Optional: limit the maximum height of the logos */
   }
@@ -7297,3 +7314,68 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	font-weight: 700;
 	margin-bottom: 4%;
   }
+
+.sponsor-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	margin-top: 5%;
+}
+
+#gcash{
+	width: 50%;
+	height: auto;
+	align-items: center;
+}
+
+.second-information, .third-information{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	margin-bottom: 1rem;
+
+}
+
+.left-information,.right-information{
+	display: flex;
+	flex-direction: column;
+	padding-top: 2rem;
+}
+
+
+.accomodation, .dietary-restrictions{
+	display: flex;
+	gap: 1rem;
+}
+
+.fourth-information{
+	width: 100%;
+	height: auto;
+}
+.accom-list{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-top: 1rem;
+}
+
+.payment-section{
+	display: flex;
+	flex-direction: column;
+	margin-top: 4%;
+}
+
+.payment-title, .total{
+	font-weight: 500;
+}
+
+.payment-total{
+	justify-items: end;
+}
+
+.payment-total-container{
+	/* background-color: gray; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
