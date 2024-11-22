@@ -128,20 +128,20 @@
                 <p>Registration Level</p>
                 <div class="left-information-form">
                   <div class="vip-container">
-                    <input id="vip" name="registation-level" value="100" type="radio">
+                    <input id="vip" name="registration-level" value="100.00" type="radio">
                     <label for="vip">VIP Admission - P100.00</label>
                   </div>
                   <div class="general-container">
-                    <input id="general" name="registation-level" value="75" type="radio">
+                    <input id="general" name="registration-level" value="75.00" type="radio">
                     <label for="general">General Admission - P75.00</label>
                   </div>
                   <div class="day-container">
-                    <input id="day" name="registation-level" value="10" type="radio">
+                    <input id="day" name="registration-level" value="10.00" type="radio">
                     <label for="day">Day Pass - P10.00</label>
                   </div>
                 </div>
               </div>
-              <div class="right-information">
+              <div class="vip-information" id="information">
                 <p>Select the VIP events you will be attending</p>
                 <div class="left-information-form">
                   <div class="vip-container">
@@ -188,10 +188,8 @@
               </div>
             </div>
             <div class="fourth-information">
-              <div class="accom-list">
                 <label id="accom-list" for="accom-list">Please list any accomodations that you will need.</label>
                 <input id="accom-list" name="accom-list" value="" type="text">
-              </div>
             </div>
 
             <div class="payment-section">
@@ -200,14 +198,14 @@
               </div>
               <div class="payment-total-container">
                 <div class="payment-description">
-                  <p>Registration Level: </p>
+                  <p>Registration Level: <span class="reg-level"></span> </p>
                   <p>Subtotal:</p>
                   <hr>
-                  <p class="total">Amount Due:</p>
+                  <p>Amount Due:</p>
                 </div>
                 <div class="payment-total">
-                  <p>P100.00</p>
-                  <p>P100.00</p>
+                  <p class="admission-fee"></p>
+                  <p class="sub-total">P100.00</p>
                   <hr>
                   <p class="total">P100.00</p>
                 </div>
@@ -258,6 +256,7 @@
   <div class="snackbars" id="form-output-global"></div>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="form.js"></script>
 </body>
 
 </html>
