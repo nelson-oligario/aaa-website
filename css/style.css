@@ -7702,15 +7702,18 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	padding-left: 10%;
 	padding-right: 10%;
 	flex-direction: column;
+	position: relative;
 }
-
+.quote-description {
+	padding: 0px 50px;
+}
 .quote-description span {
 	font-size: 100%;
 	font-family: "Space Grotesk", sans-serif;
 	display: inline-block;
 	font-weight: 900;
 	font-size: 5rem;
-
+	transform: translateY(23px);
 }
 
 .quote-description {
