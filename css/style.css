@@ -7343,6 +7343,12 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	padding-top: 2rem;
 }
 
+.vip-information{
+	display: none;
+	flex-direction: column;
+	padding-top: 2rem;
+}
+
 
 .accomodation, .dietary-restrictions{
 	display: flex;
@@ -7352,6 +7358,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 .fourth-information{
 	width: 100%;
 	height: auto;
+	display: flex;
+	flex-direction: column;
 }
 .accom-list{
 	display: flex;
@@ -7361,7 +7369,9 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .payment-section{
-	display: flex;
+	display: none;
+	width: 100%;
+	height: auto;
 	flex-direction: column;
 	margin-top: 4%;
 }
