@@ -3490,6 +3490,7 @@ ul.blog-post-meta li .icon {
 	padding: 35px 0 110px;
 	text-align: center;
 	background: linear-gradient(238deg, rgba(21, 21, 21, 0.35) 26.15%, rgba(21, 21, 21, 0.33) 88.69%);
+	min-height: 80vh;
 }
 
 .breadcrumbs-custom-title {
@@ -7381,6 +7382,7 @@ html.rd-navbar-fixed-linked .page {
 .parallax-container {
 	position: relative;
 	overflow: hidden;
+	height: 80vh;
 }
 
 .material-parallax {
@@ -7499,7 +7501,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .grid-card:hover {
-	box-shadow: rgba(0, 0, 0, .2) 0px 2px 5px 2px;
+	box-shadow: #00000033 0px 2px 5px 2px;
 }
 
 .grid-card,
@@ -7507,6 +7509,9 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	transition: all .5s;
 }
 
+.parallax-container {
+	min-height: 40vh;
+}
 
 .grid-content {
 	height: 70%;
