@@ -1003,7 +1003,7 @@ a[href*='mailto'] {
 	width: 339px;
 	height: 236px;
 	object-fit: cover;
-	object-position: 0 20px;
+	object-position: 0 0;
 }
 
 .fifth-image {
@@ -5445,7 +5445,7 @@ html [class*='section-'].section-bottom-0 {
 	right: 0;
 	bottom: calc(100% - 2px);
 	height: 65px;
-	background-image: url("../images/decor-gray-top.png");
+	background: linear-gradient(326deg, rgba(123,193,26,1) 0%, rgba(153,204,28,1) 50%, rgba(188,217,31,1) 100%);
 }
 
 /*
@@ -7382,7 +7382,7 @@ html.rd-navbar-fixed-linked .page {
 .parallax-container {
 	position: relative;
 	overflow: hidden;
-	height: 80vh;
+	
 }
 
 .material-parallax {
@@ -7408,7 +7408,7 @@ html.rd-navbar-fixed-linked .page {
 	min-height: 101%;
 	max-width: none;
 	transform: translate3d(-50%, 0, 0);
-	object-position: 0 50px;
+	object-position: 0 0;
 }
 
 .parallax-disabled {
@@ -7437,18 +7437,66 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .content-title {
-	font-size: 4vw;
+	font-size: 2.5rem;
 }
 
 .desc-title {
 	font-weight: 700;
 	margin-right: 5px;
-	font-size: 1.5vw;
+	font-size: 1.1rem;
 	margin-top: 40px;
 }
 
 .col-lg-10 p {
-	font-size: 1.5vw;
+	font-size: 1.1rem;
+}
+
+@media(max-width: 1199px){
+	.parallax-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.breadcrumbs-custom-title {
+		text-shadow: 0 4px 4px rgba(21, 21, 21, 0.25);
+		text-transform: none;
+		font-size: 3rem;
+	}
+}
+
+
+@media(max-width: 991px){
+	.container{
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.col-lg-10{
+		padding-bottom: 4%;
+		padding-top: 3%;
+	}
+	.content-title{
+		font-size: 2.3rem;
+	}
+
+	.event-description{
+		font-size: 0.1rem;
+	}
+
+	.col-lg-10 p {
+		font-size: 1rem;
+	}
+
+	.parallax-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media(max-width: 767px){
+	.event-description{
+		font-size: 0.1rem;
+	}
 }
 
 .content-picture {
@@ -7459,7 +7507,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 
 .event-description {
-	font-size: 2vw !important;
+	font-size: 1.8rem !important;
 
 }
 
@@ -7817,7 +7865,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 
 .carousel {
-	background-color: rgb(158, 199, 63);
+	background: linear-gradient(326deg, rgba(123,193,26,1) 0%, rgba(153,204,28,1) 50%, rgba(188,217,31,1) 100%);
 	width: 100%;
 	height: 80px;
 	z-index: 11;
@@ -7825,6 +7873,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	bottom: 0px;
 	right: 0px;
 	overflow: hidden;
+	padding: 1.1rem 0;
 }
 
 /* .sponsor-container {
@@ -7969,4 +8018,60 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	/* background-color: gray; */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Container styles */
+.scrolling-text-container {
+    /* background-color: #eff5ff; */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 0;
+}
+
+/* Text styles */
+.scrolling-text {
+    display: flex;
+}
+
+.scrolling-text-item {
+    padding: 0 30px;
+}
+
+/* Apply the animation to the text items */
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/* Pause the animation when a user hovers over it */
+.scrolling-text-container:hover .scrolling-text-inner>div {
+    animation-play-state: paused;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
