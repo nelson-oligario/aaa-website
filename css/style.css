@@ -4225,7 +4225,7 @@ p+.heading-2 {
 }
 
 p+p {
-	margin-top: 1%;
+	margin-top: 0;
 }
 
 img+p {
@@ -7729,11 +7729,13 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 .registration-container {
 	display: flex;
+	flex-wrap: wrap;
+	
 }
 
 .quote {
 	width: 50%;
-	height: 120vh;
+	height: auto;
 	background-color: #7FBC4E;
 	display: flex;
 	justify-content: center;
@@ -7747,42 +7749,50 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	justify-content: center;
 	align-items: center;
 	box-sizing: content-box;
-	padding-left: 10%;
+	
 	padding-right: 10%;
 	flex-direction: column;
-	position: relative;
 }
 .quote-description {
 	padding: 0px 50px;
 }
-.quote-description span {
-	font-size: 100%;
+/* .quote-description span {
+	font-size: 1rem;
 	font-family: "Space Grotesk", sans-serif;
 	display: inline-block;
 	font-weight: 900;
 	font-size: 5rem;
-	transform: translateY(23px);
-}
+
+} */
 
 .quote-description {
-	line-height: 60px;
-	text-align: left;
+	line-height: 3rem;
+	text-align: center;
 	font-size: 1.4rem;
 	font-weight: 700;
+	color: white;
 }
 
 .form-container {
 	width: 50%;
-	height: 120vh;
+	height: auto;
 	/* background-color: #02a8da; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-top: 10%;
+	padding-bottom: 5%;
 }
 
 .author {
 	font-size: 20px;
 	font-weight: 500;
+	color: white;
+	padding-top: 5%;
+}
+
+.author-position{
+	color: white;
 }
 
 .registration {
@@ -7807,7 +7817,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 .form-header p {
 	font-size: 1.5rem;
 	text-align: center;
-	font-weight: 500;
+	font-weight: 700;
 	color: white;
 	padding-top: 3%;
 	padding-bottom: 3%;
@@ -7917,10 +7927,11 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .sponsor-title {
-	font-size: 2vw;
+	font-size: 1.7rem;
 	font-weight: 700;
 	margin-bottom: 4%;
 	padding: 30px;
+	text-align: center;
 }
 
 .sponsor-section {
@@ -8014,6 +8025,19 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	justify-items: end;
 }
 
+.admission-fee{
+	justify-content: end;
+}
+
+.payment-level{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+
+
 .payment-total-container {
 	/* background-color: gray; */
 	display: grid;
@@ -8074,4 +8098,114 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     100% {
         transform: translateX(0%);
     }
+}
+
+@media(max-width: 1600px){
+	.form{
+		width: 90%;
+	}
+}
+
+
+@media(max-width: 991px){
+	.registration-container{
+		flex-direction: column;
+	}
+	.quote{
+		width: 100%;
+	}
+
+	.quote-container{
+		padding: 2%;
+	}
+
+	.form-container{
+		width: 100%;
+	}
+
+	.form{
+		width: 70%;
+	}
+
+	.quote-description{
+		font-size: 1.3rem;
+	}
+}
+
+@media(max-width: 793px){
+	.form{
+		width: 100%;
+		border-radius: 0px;
+		box-shadow: 0 0 0;
+	}
+
+	.form-container{
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	.form-header{
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+
+	.quote-description{
+		color: white;
+		text-align: center;
+	}
+
+	.author{
+		color: white;
+		text-align: center;
+	}
+}
+
+@media(max-width: 652px){
+	.quote-description{
+		font-size: 1rem;
+	}
+	.author{
+		font-size: 1rem;
+	}
+}
+
+@media(max-width: 500px){
+	.quote-description{
+		font-size: 0.9rem;
+	}
+	.author{
+		font-size: 0.9rem;
+	}
+}
+
+@media(max-width: 425px){
+	.quote{
+		display: none;
+	}
+	.author{
+		font-size: 0.9rem;
+	}
+}
+
+
+.banking-container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4%;
+}
+
+.bank-logos{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+#gcash-logo, #visa-logo, #paypal-logo, #mastercard-logo{
+	width: 10%;
+	height: auto;
+	margin: 0 2%;
 }
