@@ -110,7 +110,7 @@
           <div class="form-header">
             <p>Spread the Kindness</p>
           </div>
-          <form class="register" action="" method="">
+          <form class="register" action="http://localhost:3000/users" method="POST">
             <div class="initial-information">
               <label for="first-name" class="label">First Name</label>
               <input class="input" type="text" name="firstName">
@@ -121,7 +121,7 @@
               <label for="phone" class="label">Phone No.</label>
               <input class="input" type="tel" name="phone">
               <label for="address" class="label">Address</label>
-              <input class="input" type="tel" name="address">
+              <input class="input" type="text" name="address">
             </div>
 
             <div class="second-information">
@@ -129,16 +129,16 @@
                 <p>Registration Level</p>
                 <div class="left-information-form">
                   <div class="vip-container">
-                    <input id="vip" name="registration-level" value="100.00" type="radio">
-                    <label for="vip">VIP Admission - P100.00</label>
+                    <input id="vip" name="registrationLevel" value="100.00" type="radio">
+                    <label for="registrationLevel">VIP Admission - P100.00</label>
                   </div>
                   <div class="general-container">
-                    <input id="general" name="registration-level" value="75.00" type="radio">
-                    <label for="general">General Admission - P75.00</label>
+                    <input id="general" name="registrationLevel" value="75.00" type="radio">
+                    <label for="registrationLevel">General Admission - P75.00</label>
                   </div>
                   <div class="day-container">
-                    <input id="day" name="registration-level" value="10.00" type="radio">
-                    <label for="day">Day Pass - P10.00</label>
+                    <input id="day" name="registrationLevel" value="10.00" type="radio">
+                    <label for="registrationLevel">Day Pass - P10.00</label>
                   </div>
                 </div>
               </div>
@@ -147,15 +147,15 @@
                 <div class="left-information-form">
                   <div class="vip-container">
                     <input id="panel" name="events" value="panel" type="checkbox">
-                    <label for="panel">Panel Discussion</label>
+                    <label for="events">Panel Discussion</label>
                   </div>
                   <div class="general-container">
                     <input id="meet" name="events" value="meet" type="checkbox">
-                    <label for="meet">Meet and Greet</label>
+                    <label for="events">Meet and Greet</label>
                   </div>
                   <div class="day-container">
                     <input id="reception" name="events" value="reception" type="checkbox">
-                    <label for="reception">Welcome Reception</label>
+                    <label for="events">Welcome Reception</label>
                   </div>
                 </div>
               </div>
@@ -166,11 +166,11 @@
                 <div class="accomodation">
                   <div class="yes-accom">
                     <input id="accom-yes" name="accomodation" value="accom-yes" type="radio">
-                    <label for="accom-yes">Yes</label>
+                    <label for="accomodation">Yes</label>
                   </div>
                   <div class="no-accom">
                     <input id="accom-no" name="accomodation" value="accom-no" type="radio">
-                    <label for="accom-no">No</label>
+                    <label for="accomodation">No</label>
                   </div>
                 </div>
               </div>
@@ -178,19 +178,19 @@
                 <p>Do you have dietary restrictions?</p>
                 <div class="dietary-restrictions">
                   <div class="restriction-yes">
-                    <input id="yes-restrict" name="has-dietary-restriction" value="yes" type="radio">
-                    <label for="yes-restrict">Yes</label>
+                    <input id="yes-restrict" name="hasdietaryRestriction" value="yes" type="radio">
+                    <label for="hasdietaryRestriction">Yes</label>
                   </div>
                   <div class="restriction-no">
-                    <input id="no-restrict" name="has-dietary-restriction" value="no" type="radio">
-                    <label for="no-restrict">No</label>
+                    <input id="no-restrict" name="hasdietaryRestriction" value="no" type="radio">
+                    <label for="hasdietaryRestriction">No</label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="fourth-information">
-                <label id="accom-list" for="accom-list">Please list any accomodations that you will need.</label>
-                <input id="accom-list" name="accom-list" value="" type="text">
+                <label id="accom-list" for="accomList">Please list any accomodations that you will need.</label>
+                <input id="accomList" name="accomList" value="" type="text">
             </div>
 
             <div class="payment-section">
@@ -216,7 +216,7 @@
             </div>
 
             <div class="register-button-container">
-              <button class="register-button input button button-primary button-sm" type="submit">Register</button>
+              <input class="register-button input button button-primary button-sm" type="submit" value="Submit">
             </div>
             <div class="banking-container">
               <div class="bank-logos">

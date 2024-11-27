@@ -1,5 +1,5 @@
 // Select all radio buttons in the "second-information" container
-const radioButtons = document.querySelectorAll('input[name="registration-level"]');
+const radioButtons = document.querySelectorAll('input[name="registrationLevel"]');
 
 // Add event listeners to each radio button
 radioButtons.forEach((radio) => {
@@ -8,7 +8,7 @@ radioButtons.forEach((radio) => {
     const paymentSection = document.querySelector(".payment-section");
 
     if (this.id === "vip" && this.checked) {
-      vipInfo.style.display = "grid"; // Show VIP info if VIP is selected
+      vipInfo.style.display = "flex"; // Show VIP info if VIP is selected
       paymentSection.style.display = "flex"; // Show payment section
       document.querySelector('.reg-level').innerText = "VIP Admission"
       document.querySelector('.admission-fee').innerText = "P" + document.querySelector('#vip').value
